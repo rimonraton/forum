@@ -12,7 +12,7 @@ class Answer extends Model
     }
     public function user()
     {
-    		return $this->blongsTo(User::class);
+    	return $this->belongsTo(User::class);
     }
     public function getBodyHtmlAttribute()
     {
@@ -24,7 +24,10 @@ class Answer extends Model
         static::created(function($answer){
             $answer->question->increment('answers_count');
         });
-
+    }
+    public function getCreatedDateAttribute()
+    {
+        return $this->created_at->diffForHumans();
     }
 
 }
