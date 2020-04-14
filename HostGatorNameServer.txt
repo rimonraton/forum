@@ -1,0 +1,2 @@
+NS1 = ns8411.hostgator.com
+NS2 = ns8412.hostgator.com
