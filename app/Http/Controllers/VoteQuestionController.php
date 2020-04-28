@@ -15,7 +15,6 @@ class VoteQuestionController extends Controller
     {
     		$vote = (int) request()->vote;
     		auth()->user()->voteQuestion($question, $vote);
-    		// return $vote;
     		return back();
     }
 }
