@@ -7,6 +7,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
 .counters {
 	margin-right: 30px;
 	font-size: 10px;
@@ -53,9 +58,9 @@ form.form-delete {
 	span{
 		&.votes-count{
 			font-size: 25px;
-			&.favorites-count{
-				font-size: 12px;
-			}
+		}
+		&.favorites-count{
+			font-size: 12px;
 		}
 	}
 	a {
@@ -74,7 +79,11 @@ form.form-delete {
 		&.vote-accepted{
 			color: $green;
 		}
-
 	}
-	// &.vote-up, &.vote-down, &.favorite
+}
+.post {
+  padding: 20px 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba($black, .1);
+  }
 }

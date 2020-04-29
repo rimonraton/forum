@@ -10882,6 +10882,11 @@ a.text-dark:focus {
   }
 }
 
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
 .counters {
   margin-right: 30px;
   font-size: 10px;
@@ -10937,7 +10942,7 @@ form.form-delete {
   font-size: 25px;
 }
 
-.vote-controls span.votes-count.favorites-count {
+.vote-controls span.favorites-count {
   font-size: 12px;
 }
 
@@ -10958,5 +10963,13 @@ form.form-delete {
 
 .vote-controls a.vote-accepted {
   color: #38c172;
+}
+
+.post {
+  padding: 20px 0;
+}
+
+.post:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
