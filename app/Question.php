@@ -48,7 +48,7 @@ class Question extends Model
 
     public function answers()
     {
-        return $this->hasMany(Answer::class);
+        return $this->hasMany(Answer::class)->orderBy('votes_count', 'desc');
         // $question->answers->count()
         // foreach ($question->answers as $answer)
     }
