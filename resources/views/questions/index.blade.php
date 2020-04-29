@@ -22,7 +22,9 @@
 						<strong>Sorry</strong> There are no question available
 					</div>
 					@endforelse
+					<div class="row justify-content-center">
 						{{ $questions->links() }}
+					</div>
 				</div>
 			</div>
 		</div>
